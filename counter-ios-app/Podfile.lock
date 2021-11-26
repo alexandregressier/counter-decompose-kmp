@@ -1,0 +1,16 @@
+PODS:
+  - counter_shared (0.1.0)
+
+DEPENDENCIES:
+  - counter_shared (from `../counter-shared`)
+
+EXTERNAL SOURCES:
+  counter_shared:
+    :path: "../counter-shared"
+
+SPEC CHECKSUMS:
+  counter_shared: 1dbe3bea8d18bb87d52e44cbb3fa5c573a74c28d
+
+PODFILE CHECKSUM: 6b52ec9efe64eeef9c2e1ec9cdba8ae14cad74bb
+
+COCOAPODS: 1.11.2

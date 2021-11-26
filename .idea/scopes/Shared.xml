@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Shared" pattern="file[counter.counter-shared]:*||file[counter.counter-shared]:src/commonMain/*/||file[counter.counter-shared.commonMain]:*/||file[counter.counter-shared]:src/commonTest/*/||file[counter.counter-shared.commonTest]:*/" />
+</component>

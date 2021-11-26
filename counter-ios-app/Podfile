@@ -1,0 +1,5 @@
+target 'counter-ios-app' do
+  use_frameworks!
+  platform :ios, '14.1'
+  pod 'counter_shared', :path => '../counter-shared'
+end

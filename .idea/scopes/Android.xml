@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Android" pattern="file[counter.counter-android-app]:*/||file[counter.counter-shared]:src/androidMain/*/||file[counter.counter-shared]:src/androidTest/*/" />
+</component>

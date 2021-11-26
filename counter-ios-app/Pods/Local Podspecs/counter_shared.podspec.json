@@ -1,0 +1,30 @@
+{
+  "name": "counter_shared",
+  "version": "0.1.0",
+  "homepage": "https://github.com/alexandregressier/counter-decompose-kmp",
+  "source": {
+    "git": "Not Published",
+    "tag": "Cocoapods/counter_shared/0.1.0"
+  },
+  "authors": "",
+  "license": "",
+  "summary": "Counter Shared Module",
+  "vendored_frameworks": "build/cocoapods/framework/CounterShared.framework",
+  "libraries": "c++",
+  "module_name": "counter_shared_umbrella",
+  "platforms": {
+    "ios": "14.1"
+  },
+  "pod_target_xcconfig": {
+    "KOTLIN_PROJECT_PATH": ":counter-shared",
+    "PRODUCT_MODULE_NAME": "counter_shared"
+  },
+  "script_phases": [
+    {
+      "name": "Build counter_shared",
+      "execution_position": "before_compile",
+      "shell_path": "/bin/sh",
+      "script": "                if [ \"YES\" = \"$COCOAPODS_SKIP_KOTLIN_BUILD\" ]; then\n                  echo \"Skipping Gradle build task invocation due to COCOAPODS_SKIP_KOTLIN_BUILD environment variable set to \"YES\"\"\n                  exit 0\n                fi\n                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../gradlew\" -p \"$REPO_ROOT\" $KOTLIN_PROJECT_PATH:syncFramework                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME                     -Pkotlin.native.cocoapods.archs=\"$ARCHS\"                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n"
+    }
+  ]
+}
