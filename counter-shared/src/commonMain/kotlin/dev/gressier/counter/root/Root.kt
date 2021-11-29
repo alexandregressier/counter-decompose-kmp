@@ -37,7 +37,8 @@ class RootComponent(
 
     private fun child(config: Config, componentContext: ComponentContext): Child =
         when (config) {
-            is Config.Page -> Child.Page(component = PageComponent())
+            is Config.Page ->
+                Child.Page(component = PageComponent(title = "Page #${config.index}"))
         }
 
     override fun onNext() {
