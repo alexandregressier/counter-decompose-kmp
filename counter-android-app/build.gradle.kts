@@ -33,6 +33,13 @@ android {
     }
     kotlinOptions {
         jvmTarget = "${compileOptions.sourceCompatibility}"
+        freeCompilerArgs = freeCompilerArgs + listOf(
+            "-Xopt-in=${
+                listOf(
+                    "com.arkivanov.decompose.ExperimentalDecomposeApi",
+                ).joinToString(",")
+            }"
+        )
     }
     buildFeatures {
         compose = true
@@ -65,4 +72,7 @@ dependencies {
 
     // Activity
     implementation(AndroidX.activity.compose)
+
+    // Decompose
+    implementation("com.arkivanov.decompose:extensions-compose-jetpack:_")
 }
