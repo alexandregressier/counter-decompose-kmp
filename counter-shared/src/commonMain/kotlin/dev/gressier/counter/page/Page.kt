@@ -27,5 +27,5 @@ class PageComponent(
 
     override val counter: Counter = CounterComponent(childContext(key = "Counter"))
     override val itemList: ItemList = ItemListComponent()
-    override val editor: Editor = EditorComponent()
+    override val editor: Editor = EditorComponent(onAdd = itemList::add)
 }
