@@ -25,7 +25,7 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 // Decompose
-                implementation("com.arkivanov.decompose:decompose:_")
+                api("com.arkivanov.decompose:decompose:_")
             }
         }
         val commonTest by getting {
