@@ -65,7 +65,4 @@ dependencies {
 
     // Activity
     implementation(AndroidX.activity.compose)
-
-    // Navigation
-    implementation(AndroidX.navigation.compose)
 }
