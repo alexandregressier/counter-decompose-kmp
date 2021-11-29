@@ -65,7 +65,7 @@ dependencies {
     implementation(AndroidX.compose.ui.toolingPreview)
 
     // Material
-    implementation("androidx.compose.material3:material3:_")
+    implementation(AndroidX.compose.material)
 
     // Lifecycle
     implementation(AndroidX.lifecycle.runtimeKtx)
