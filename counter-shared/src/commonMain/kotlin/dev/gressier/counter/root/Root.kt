@@ -31,6 +31,7 @@ class RootComponent(
     private val router =
         router<Config, Child>(
             initialConfiguration = Config.Page(index = 0),
+            handleBackButton = true,
             childFactory = ::child,
         )
     override val routerState: Value<RouterState<*, Child>> = router.state
