@@ -37,8 +37,10 @@ class RootComponent(
 
     private fun child(config: Config, componentContext: ComponentContext): Child =
         when (config) {
-            is Config.Page ->
-                Child.Page(component = PageComponent(title = "Page #${config.index}"))
+            is Config.Page -> Child.Page(component = PageComponent(
+                componentContext,
+                title = "Page #${config.index}",
+            ))
         }
 
     override fun onNext() {
@@ -50,6 +52,7 @@ class RootComponent(
     }
 
     private sealed class Config : Parcelable {
-        @Parcelize data class Page(val index: Int) : Config()
+        @Parcelize
+        data class Page(val index: Int) : Config()
     }
 }
