@@ -12,6 +12,8 @@
 		2152FB042600AC8F00CF470E /* CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* CounterApp.swift */; };
 		44819BCAF38549C5F31081A7 /* Pods_counter_ios_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21374DAA0DE1CB3A5B392F5 /* Pods_counter_ios_app.framework */; };
 		FAD5B5BB275146B000A1F2E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD5B5BA275146B000A1F2E5 /* ContentView.swift */; };
+		FAF5C3DF27553D1A00074E74 /* CounterUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5C3DE27553D1A00074E74 /* CounterUi.swift */; };
+		FAF5C3E127553E6900074E74 /* ObservableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5C3E027553E6900074E74 /* ObservableValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F21374DAA0DE1CB3A5B392F5 /* Pods_counter_ios_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_counter_ios_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D3163420E8D1A0284EBA03 /* Pods-counter-ios-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-counter-ios-app.release.xcconfig"; path = "Target Support Files/Pods-counter-ios-app/Pods-counter-ios-app.release.xcconfig"; sourceTree = "<group>"; };
 		FAD5B5BA275146B000A1F2E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAF5C3DE27553D1A00074E74 /* CounterUi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUi.swift; sourceTree = "<group>"; };
+		FAF5C3E027553E6900074E74 /* ObservableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				FAD5B5BA275146B000A1F2E5 /* ContentView.swift */,
+				FAF5C3DE27553D1A00074E74 /* CounterUi.swift */,
 				2152FB032600AC8F00CF470E /* CounterApp.swift */,
+				FAF5C3E027553E6900074E74 /* ObservableValue.swift */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
@@ -191,6 +197,8 @@
 			files = (
 				FAD5B5BB275146B000A1F2E5 /* ContentView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* CounterApp.swift in Sources */,
+				FAF5C3E127553E6900074E74 /* ObservableValue.swift in Sources */,
+				FAF5C3DF27553D1A00074E74 /* CounterUi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
